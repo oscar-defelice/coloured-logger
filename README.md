@@ -1,7 +1,7 @@
 ![pypi](https://img.shields.io/pypi/v/coloured-logger.svg)
 ![python](https://img.shields.io/pypi/pyversions/coloured-logger.svg)
 ![license](https://img.shields.io/github/license/oscar-defelice/coloured-logger.svg)
-![last-commit](https://img.shields.io/github/last-commit/oscar-defelice/coloured-logger.svg)
+![last-commit](https://img.shields.io/github/last-commit/oscar-defelice/coloured-logger/develop)
 ![docs](https://readthedocs.org/projects/coloured-logger/badge/?version=latest)
 [![patreon](https://img.shields.io/badge/Patreon-brown.svg?logo=patreon)](https://www.patreon.com/oscardefelice)
 [![follow](https://img.shields.io/twitter/follow/oscardefelice.svg?style=social)](https://twitter.com/OscardeFelice)
