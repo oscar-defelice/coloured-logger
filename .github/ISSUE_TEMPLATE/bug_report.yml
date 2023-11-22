@@ -1,0 +1,40 @@
+name: 🐛Bug Report
+description: File a bug report here
+title: "[BUG]: "
+labels: ["bug"]
+assignees: ["oscar-defelice"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report 🤗
+        Make sure there are not any open/closed issues for this topic 😃
+        Note if your issue is not a bug, please use the [Feature Request](https://github.com/WhiteLabGenomics/AminoGen/tree/develop/.github/ISSUE_TEMPLATE/feature_request.yml).
+        If it is not a feature request either, please use the [discussion section](https://github.com/WhiteLabGenomics/AminoGen/discussions/) of this repository.
+
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Description of the bug
+      description: Give us a brief description of what happened and what should have happened
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps To Reproduce
+      description: Steps to reproduce the behavior.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. Scroll down to '...'
+        4. See error
+    validations:
+      required: true
+  - type: textarea
+    id: additional-information
+    attributes:
+      label: Additional Information
+      description: |
+        Provide any additional information such as logs, screenshots, likes, scenarios in which the bug occurs so that it facilitates resolving the issue.
