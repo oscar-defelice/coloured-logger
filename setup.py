@@ -15,8 +15,10 @@ from setuptools import setup, find_packages
 pypi_name = "coloured-logger"
 pkg_name = "coloured_logger"
 
+
 def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
+
 
 # Read requirements.txt
 with open("requirements.txt") as f:
@@ -24,7 +26,7 @@ with open("requirements.txt") as f:
 
 s = setup(
     name=pypi_name,
-    version="{{VERSION_PLACEHOLDER}}",
+    version=__version__,
     license=__license__,
     description=__description__,
     long_description=read("README.md"),
@@ -34,11 +36,6 @@ s = setup(
     packages=find_packages(where="src"),
     package_dir={"": "src"},
     include_package_data=True,
-    entry_points={
-        "console_scripts": [
-            "git-message-hook = git_message_hook.main:main",
-        ],
-    },
     install_requires=requirements,
     python_requires=">= 3.9",
     author=__author__,
