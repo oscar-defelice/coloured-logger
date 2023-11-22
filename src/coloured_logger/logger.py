@@ -41,10 +41,46 @@ class ColouredLogger(logging.Logger):
 
         self.colours = colours
         self.colour_format = formatter_message(message=self.FORMAT, use_color=True)
-        colour_formatter = ColouredFormatter(self.colour_format, use_color=True, colours=self.colours)
+        colour_formatter = ColouredFormatter(
+            self.colour_format, use_color=True, colours=self.colours
+        )
 
         console = logging.StreamHandler()
         console.setFormatter(colour_formatter)
 
         self.addHandler(console)
         return
+
+
+class Logger(logging.Logger):
+    FORMAT = "[$BOLD%(name)-20s$RESET][%(levelname)-18s]  %(message)s ($BOLD%(filename)s$RESET:%(lineno)d)"
+
+    def __init__(self, name, colours=COLOURS, level="INFO"):
+        super().__init__(name=name, level=level)
+        self.logger = logging.getLogger(name)
+        self.logger.setLevel(level)
+
+        colour_format = formatter_message(message=self.FORMAT, use_color=True)
+        colour_formatter = ColouredFormatter(
+            colour_format, use_color=True, colours=colours
+        )
+
+        console = logging.StreamHandler()
+        console.setFormatter(colour_formatter)
+
+        self.logger.addHandler(console)
+
+    def info(self, message, *args, **kwargs):
+        self.logger.info(message, *args, **kwargs)
+
+    def debug(self, message, *args, **kwargs):
+        self.logger.debug(message, *args, **kwargs)
+
+    def warning(self, message, *args, **kwargs):
+        self.logger.warning(message, *args, **kwargs)
+
+    def error(self, message, *args, **kwargs):
+        self.logger.error(message, *args, **kwargs)
+
+    def critical(self, message, *args, **kwargs):
+        self.logger.critical(message, *args, **kwargs)
