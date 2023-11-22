@@ -7,10 +7,15 @@
 [![follow](https://img.shields.io/twitter/follow/oscardefelice.svg?style=social)](https://twitter.com/OscardeFelice)
 [![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?&logo=linkedin&logoColor=white)](https://linkedin.com/in/oscar-de-felice)
 
-
 # ColouredLogger
 
-ColouredLogger is a Python package that provides a customised logger with coloured output and the ability to set verbosity levels dynamically.
+<!-- markdownlint-disable MD033 -->
+<div align="center">
+    <img src="./images/logo.png" width="800px">
+</div>
+<!-- markdownlint-enable MD033 -->
+
+`coloured-logger` is a Python package that provides a customised logger with coloured output and the ability to set verbosity levels dynamically.
 
 ## Installation
 
@@ -31,7 +36,7 @@ logger.info("This is an informational message.")
 logger.debug("This debug message won't be displayed.")
 ```
 
-Colour scheme is customisable by user using the [ANSI escape codes](https://gist.github.com/fnky/458719343aabd01cfb17a3a4f7296797) for colours. 
+Colour scheme is customisable by user using the [ANSI escape codes](https://gist.github.com/fnky/458719343aabd01cfb17a3a4f7296797) for colours.
 These are typically defined in terms of foreground and background colours, and each color has an associated numeric code. Here is a common mapping:
 
 ### Colour codes
@@ -68,7 +73,7 @@ Most terminals, apart from the basic set of 8 colors, also support the "bright" 
 
 The user can simply define a python dictionary in order to change logger colours with a simplified solour scheme.
 
-#### Configure logger colours:
+#### Configure logger colours
 
 In order to configure the logger colours, the user can use the following code
 
@@ -85,4 +90,3 @@ my_custom_colours = {
 
 logger = ColouredLogger(__name__, my_custom_colours)
 ```
-
