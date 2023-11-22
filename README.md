@@ -19,7 +19,7 @@
 
 ## Installation
 
-You can install My Colored Logger using pip:
+You can install My Coloured Logger using pip:
 
 ```bash
 pip install coloured-logger
@@ -30,7 +30,9 @@ pip install coloured-logger
 As all the good loggers you simply use it as the standard logger
 
 ```python
-from coloured_logger import logger
+from coloured_logger import Logger
+
+logger = Logger(__name__) # Or any other name you want
 
 logger.info("This is an informational message.")
 logger.debug("This debug message won't be displayed.")
@@ -71,14 +73,14 @@ Most terminals, apart from the basic set of 8 colors, also support the "bright" 
 
 ### A simplified configuration
 
-The user can simply define a python dictionary in order to change logger colours with a simplified solour scheme.
+The user can simply define a python dictionary in order to change logger colours with a simplified colour scheme.
 
 #### Configure logger colours
 
 In order to configure the logger colours, the user can use the following code
 
 ```python
-from coloured_logger import ColouredLogger
+from coloured_logger import Logger
 
 my_custom_colours = {
     "WARNING": 4,  # Yellow background with blue text
@@ -88,5 +90,8 @@ my_custom_colours = {
     "ERROR": 5     # Magenta text
 }
 
-logger = ColouredLogger(__name__, my_custom_colours)
+# This can change the logger level
+logger_level = "DEBUG"
+
+logger = Logger(__name__, my_custom_colours, logger_level)
 ```
