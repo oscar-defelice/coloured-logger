@@ -3,7 +3,7 @@
 
 import logging
 
-from src.coloured_logger.logger_config import COLOURS, RESET_SEQ, COLOR_SEQ, BOLD_SEQ
+from coloured_logger.logger_config import COLOURS, RESET_SEQ, COLOR_SEQ, BOLD_SEQ
 
 
 def formatter_message(message, use_color=True):
