@@ -11,7 +11,7 @@
 
 <!-- markdownlint-disable MD033 -->
 <div align="center">
-    <img src="./images/logo.png" width="800px">
+    <img src="images/logo.png" width="800px">
 </div>
 <!-- markdownlint-enable MD033 -->
 
