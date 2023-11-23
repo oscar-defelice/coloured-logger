@@ -2,7 +2,7 @@ __author__ = "Oscar de Felice"
 __email__ = "oscar.defelice@gmail.com"
 __title__ = "Coloured Logger"
 __description__ = "A coloured logger for Python"
-__version__ = "1.0.0"
+__version__ = "{{VERSION_PLACEHOLDER}}"
 __license__ = "MIT"
 
 # Path: src/coloured_logger/__init__.py
