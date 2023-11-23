@@ -33,7 +33,6 @@ s = setup(
     keywords="security,scanner",
     url="https://github.com/oscar-defelice/%s" % pypi_name,
     packages=find_packages(),
-    package_dir={"": "src"},
     include_package_data=True,
     install_requires=requirements,
     python_requires=">= 3.9",
