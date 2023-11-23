@@ -1,8 +1,7 @@
 """ Setup file for the package."""
 #!/usr/bin/env python3
 import os
-from src import coloured_logger
-from src.coloured_logger import (
+from coloured_logger import (
     __version__,
     __description__,
     __author__,
@@ -33,7 +32,7 @@ s = setup(
     long_description_content_type="text/markdown",
     keywords="security,scanner",
     url="https://github.com/oscar-defelice/%s" % pypi_name,
-    packages=find_packages(where="src"),
+    packages=find_packages(),
     package_dir={"": "src"},
     include_package_data=True,
     install_requires=requirements,

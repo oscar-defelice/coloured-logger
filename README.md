@@ -11,7 +11,7 @@
 
 <!-- markdownlint-disable MD033 -->
 <div align="center">
-    <img src="images/logo.png" width="800px">
+    <img src="https://raw.githubusercontent.com/oscar-defelice/coloured-logger/develop/images/logo.png" width="800px">
 </div>
 <!-- markdownlint-enable MD033 -->
 
